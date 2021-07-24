@@ -4,11 +4,8 @@
     
     <div class="container mt-5">
       <h1 class="text-info">Dashboard</h1>
+      <hr class="bg-info">
       <table class="table table-striped table-dark">
-        <thead>
-          <th class="bg-info text-center">&nbsp;</th>
-          <th class="bg-info text-center">&nbsp;</th>
-        </thead>
         <tbody>
           <tr><th>ID</th><td>{{$auth.user.id}}</td></tr>
           <tr><th>User</th><td>{{$auth.user.name}}</td></tr>

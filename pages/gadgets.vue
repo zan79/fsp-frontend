@@ -3,6 +3,7 @@
     <NavBar/>
     <div class="container mt-5">
       <h1 class="text-warning">Gadgets</h1>
+      <hr class="bg-warning">
       <div class="row">
         <div class="col-6">
           <h5 class="text-light">List of Gadgets</h5>
@@ -12,7 +13,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-4 offset-1">
+        <div class="col-6">
           <GadgetView :gadget="selectedGadget" @saveGadget="onChanges" @newGadget="onNewGadget" @deleteGadget="onChanges"/>
         </div>
       </div>

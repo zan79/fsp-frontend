@@ -4,32 +4,40 @@
       New Gadget
     </button>
     <h5 class="text-light">Gadget View</h5>
-    <hr>
+    <hr class="bg-light">
 
     <form class="text-light" action="" @submit.prevent="">
-      <b-form-group label="Name">
-        <b-form-input v-model="gadget.name"></b-form-input>
-      </b-form-group>
+      <div class="row">
 
-      <b-form-group label="Brand">
-        <b-form-input v-model="gadget.brand"></b-form-input>
-      </b-form-group>
+        <div class="col-6">
+          <b-form-group label="Name">
+            <b-form-input v-model="gadget.name"></b-form-input>
+          </b-form-group>
 
-      <b-form-group label="Description">
-        <b-form-input v-model="gadget.description"></b-form-input>
-      </b-form-group>
+          <b-form-group label="Brand">
+            <b-form-input v-model="gadget.brand"></b-form-input>
+          </b-form-group>
 
-      <b-form-group label="Price">
-        <b-form-input type="number" v-model="gadget.price"></b-form-input>
-      </b-form-group>
+          <b-form-group label="Description">
+            <b-form-input v-model="gadget.description"></b-form-input>
+          </b-form-group>
+        </div>
 
-      <b-form-group label="Stock">
-        <b-form-input type="number" v-model="gadget.stock"></b-form-input>
-      </b-form-group>
+        <div class="col-6">
+          <b-form-group label="Price">
+            <b-form-input type="number" v-model="gadget.price"></b-form-input>
+          </b-form-group>
 
-      <b-form-group label="Date Acquired">
-        <b-form-input type="date" v-model="gadget.acquired_on"></b-form-input>
-      </b-form-group>
+          <b-form-group label="Stock">
+            <b-form-input type="number" v-model="gadget.stock"></b-form-input>
+          </b-form-group>
+
+          <b-form-group label="Date Acquired">
+            <b-form-input type="date" v-model="gadget.acquired_on"></b-form-input>
+          </b-form-group>
+        </div>
+        
+      </div>
 
       <b-form-group>
         <button class="btn btn-primary" @click="onSave">Save Changes</button>
